@@ -6,7 +6,8 @@ import { getConfig } from "../config";
 import Loading from "../components/Loading";
 
 export const ExternalApiComponent = () => {
-  const { apiOrigin = "http://localhost:3001", audience } = getConfig();
+  // apigateway, see https://github.com/nathanesau/atppredictionsapi
+  const { apiOrigin = "https://tnglzfths0.execute-api.us-east-1.amazonaws.com/prod", audience } = getConfig();
 
   const [state, setState] = useState({
     showResult: false,
@@ -58,7 +59,7 @@ export const ExternalApiComponent = () => {
     try {
       const token = await getAccessTokenSilently();
 
-      const response = await fetch(`${apiOrigin}/api/external`, {
+      const response = await fetch(`${apiOrigin}?method=saveprediction`, {
         headers: {
           Authorization: `Bearer ${token}`,
         }
