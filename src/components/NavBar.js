@@ -33,7 +33,7 @@ const NavBar = () => {
   const logoutWithRedirect = () =>
     logout({
         logoutParams: {
-          returnTo: window.location.origin,
+          returnTo: window.location.origin + '/atppredictions',
         }
     });
 
@@ -75,11 +75,7 @@ const NavBar = () => {
                     id="qsLoginBtn"
                     color="primary"
                     className="btn-margin"
-                    onClick={() => loginWithRedirect({
-                      appState: {
-                        returnTo: '/atppredictions',
-                      }
-                    })}
+                    onClick={() => loginWithRedirect()}
                   >
                     Log in
                   </Button>
