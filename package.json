@@ -1,8 +1,11 @@
 {
   "name": "auth0-react-sample",
+  "homepage": "https://nathanesau.github.io/atppredictions/",
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "npm-run-all --parallel spa api-server",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -44,6 +47,7 @@
   "devDependencies": {
     "@testing-library/jest-dom": "^5.17",
     "@testing-library/react": "^14.1",
+    "gh-pages": "^6.1.1",
     "jest-environment-jsdom": "^27.0",
     "jest-fetch-mock": "^3.0",
     "nodemon": "^2.0"
