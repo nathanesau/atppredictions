@@ -24,4 +24,4 @@ yarn-error.log*
 
 # at some point, these auth variables should be managed via secrets
 # but for now, this can be directly pushed
-#auth_config.json
+auth_config.json
