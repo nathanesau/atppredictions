@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/atppredictions/static/css/main.e79340e1.css",
-    "main.js": "/atppredictions/static/js/main.e697931b.js",
+    "main.js": "/atppredictions/static/js/main.9809893d.js",
     "static/media/logo.svg": "/atppredictions/static/media/logo.103b5fa18196d5665a7e12318285c916.svg",
     "static/media/loading.svg": "/atppredictions/static/media/loading.330b7d99bfbae8039a5456998d97914f.svg",
     "index.html": "/atppredictions/index.html",
     "main.e79340e1.css.map": "/atppredictions/static/css/main.e79340e1.css.map",
-    "main.e697931b.js.map": "/atppredictions/static/js/main.e697931b.js.map"
+    "main.9809893d.js.map": "/atppredictions/static/js/main.9809893d.js.map"
   },
   "entrypoints": [
     "static/css/main.e79340e1.css",
-    "static/js/main.e697931b.js"
+    "static/js/main.9809893d.js"
   ]
 }
