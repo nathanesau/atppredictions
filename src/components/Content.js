@@ -4,6 +4,7 @@ import { Row, Col } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import contentData from "../utils/contentData";
+import { Link } from "react-router-dom/cjs/react-router-dom";
 
 class Content extends Component {
   render() {
@@ -14,12 +15,11 @@ class Content extends Component {
           {contentData.map((col, i) => (
             <Col key={i} md={5} className="mb-4">
               <h6 className="mb-3">
-                <a href={col.link}>
+                <Link to={`${col.link}`}>
                   <FontAwesomeIcon icon="link" className="mr-2" />
-                  {col.title}
-                </a>
-              </h6>
-              <p>{col.description}</p>
+                  { col.title }
+                </Link>
+            </h6><p>{col.description}</p>
             </Col>
           ))}
         </Row>

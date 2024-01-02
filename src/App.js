@@ -7,7 +7,9 @@ import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import Home from "./views/Home";
 import Profile from "./views/Profile";
-import ExternalApi from "./views/ExternalApi";
+import Prediction from "./views/Prediction";
+import Leaderboard from "./views/Leaderboard";
+import Tournaments from "./views/Tournaments";
 import { useAuth0 } from "@auth0/auth0-react";
 
 // styles
@@ -36,10 +38,12 @@ const App = () => {
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/profile" component={Profile} />
-            <Route path="/external-api" component={ExternalApi} />
+            <Route path={["/leaderboard"]} component={Leaderboard} />
+            <Route path="/tournaments" component={Tournaments} />
+            <Route path="/prediction/:tournamentId/:tournamentName/:tournamentStartDate/:tournamentEndDate" component={Prediction} />
           </Switch>
         </Container>
-        <Footer />
+        {/*<Footer />*/}
       </div>
     </BrowserRouter>
   );

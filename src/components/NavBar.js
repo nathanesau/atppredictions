@@ -55,15 +55,25 @@ const NavBar = () => {
                   Home
                 </NavLink>
               </NavItem>
+              <NavItem>
+                <NavLink
+                  tag={RouterNavLink}
+                  to="/leaderboard"
+                  exact
+                  activeClassName="router-link-exact-active"
+                >
+                  Leaderboard
+                </NavLink>
+              </NavItem>
               {isAuthenticated && (
                 <NavItem>
                   <NavLink
                     tag={RouterNavLink}
-                    to="/external-api"
+                    to="/tournaments"
                     exact
                     activeClassName="router-link-exact-active"
                   >
-                    External API
+                    Tournaments
                   </NavLink>
                 </NavItem>
               )}
