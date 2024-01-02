@@ -17,6 +17,10 @@
   }
 }
 
+.container {
+  margin-bottom: 3rem;
+}
+
 .spinner {
   position: absolute;
   display: flex;
@@ -32,4 +36,10 @@
 
 .result-block-container .result-block {
   opacity: 1;
+}
+
+ul.no-bullets {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
 }

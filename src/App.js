@@ -35,15 +35,15 @@ const App = () => {
       <div id="app" className="d-flex flex-column h-100">
         <NavBar />
         <Container className="flex-grow-1 mt-5">
-          <Switch>
-            <Route path="/" exact component={Home} />
-            <Route path="/profile" component={Profile} />
-            <Route path={["/leaderboard"]} component={Leaderboard} />
-            <Route path="/tournaments" component={Tournaments} />
-            <Route path="/prediction/:tournamentId/:tournamentName/:tournamentStartDate/:tournamentEndDate" component={Prediction} />
-          </Switch>
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/profile" component={Profile} />
+          <Route path={["/leaderboard"]} component={Leaderboard} />
+          <Route path="/tournaments" component={Tournaments} />
+          <Route path="/prediction/:tournamentId/:tournamentName/:tournamentStartDate/:tournamentEndDate" component={Prediction} />
+        </Switch>
         </Container>
-        {/*<Footer />*/}
+        <Footer />
       </div>
     </BrowserRouter>
   );
